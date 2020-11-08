@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcowPageViewController" customModule="EcoNews" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EcoNews" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVa-A9-DgX">
+                    <rect key="frame" x="77" y="166" width="260" height="53"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slc-1m-4lb">
+                    <rect key="frame" x="77" y="358" width="260" height="30"/>
+                    <color key="tintColor" red="0.0" green="0.038325563414638761" blue="0.70223402266735757" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Авторизация"/>
+                    <connections>
+                        <action selector="buttonAuthorize:" destination="-1" eventType="touchUpInside" id="Et2-hR-2to"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23k-ME-aNt">
+                    <rect key="frame" x="77" y="440" width="260" height="30"/>
+                    <color key="tintColor" red="0.044435374440000001" green="0.0" blue="0.72161322829999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Регистрация"/>
+                    <connections>
+                        <action selector="buttonSignIn:" destination="-1" eventType="touchUpInside" id="zPs-eF-UdC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.33315685695022884" green="0.7009386858797928" blue="0.36394622590149778" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="23k-ME-aNt" firstAttribute="top" secondItem="slc-1m-4lb" secondAttribute="bottom" constant="52" id="3IH-1v-9el"/>
+                <constraint firstItem="nVa-A9-DgX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="122" id="GSQ-Ab-iXA"/>
+                <constraint firstItem="23k-ME-aNt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="77" id="M1I-fV-p3l"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nVa-A9-DgX" secondAttribute="trailing" constant="77" id="TUP-r9-cSh"/>
+                <constraint firstItem="slc-1m-4lb" firstAttribute="top" secondItem="nVa-A9-DgX" secondAttribute="bottom" constant="139" id="d7x-gr-KVC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="slc-1m-4lb" secondAttribute="trailing" constant="77" id="goK-NL-GJ6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="23k-ME-aNt" secondAttribute="trailing" constant="77" id="nry-RF-B6S"/>
+                <constraint firstItem="nVa-A9-DgX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="77" id="vCR-MY-8PX"/>
+                <constraint firstItem="slc-1m-4lb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="77" id="y8z-aP-8pC"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
+        </view>
+    </objects>
+</document>
