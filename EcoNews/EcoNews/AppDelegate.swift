@@ -21,7 +21,7 @@ var window: UIWindow?
         // visual main
         self.window?.rootViewController = welcomeVC
         self.window?.makeKeyAndVisible()
-      //  self.window?.
+        //  self.window?.
         return true
     }
 }
