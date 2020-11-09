@@ -51,7 +51,7 @@ class SignUpControllerView: UIViewController {
         }
         return nil
     }
-    
+  
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if (touches.first) != nil{
             view.endEditing(true)
