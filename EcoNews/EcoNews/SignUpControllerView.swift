@@ -36,6 +36,13 @@ class SignUpControllerView: UIViewController {
         }
         return nil
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if (touches.first) != nil{
+            view.endEditing(true)
+        }
+        super.touchesBegan(touches, with: event)
+    }
 
     @IBAction func signUpButton(_ sender: Any) {
             let error = checkValidData()
@@ -46,7 +53,7 @@ class SignUpControllerView: UIViewController {
                 } else {
                     Auth.auth().createUser(withEmail: mailTextField.text!, password: passwordTextField.text!) { (result, error) in
                         if error != nil {
-                            self.errorLabel.text = "\(error?.localizedDescription)"
+                            self.errorLabel.text = "We have a problem"
                         } else {
                             let db = Firestore.firestore()
                             db.collection("users").addDocument(data: [

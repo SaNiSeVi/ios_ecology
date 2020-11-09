@@ -12,8 +12,6 @@ class AuthorizationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
 
     @IBOutlet weak var imageView: UIImageView!
@@ -32,12 +30,20 @@ class AuthorizationViewController: UIViewController {
         return nil
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if touches.first != nil{
+            view.endEditing(true)
+        }
+        super.touchesBegan(touches, with: event)
+    }
+    
     @IBAction func buttonInput(_ sender: Any) {
         let myerror = checkValidData()
+        if myerror == nil{
         Auth.auth().signIn(withEmail: loginTextField.text!, password: passwordTextField.text!) { (result, error) in
-                    if myerror != nil {
-                        self.labelForError.alpha = 1
-                        self.labelForError.text = myerror
+                if error != nil {
+                    self.labelForError.alpha = 1
+                    self.labelForError.text = "User is not found"
                     } else {
                         let mapVC = MapViewController()
                         let newsVC = NewsViewController()
@@ -57,5 +63,10 @@ class AuthorizationViewController: UIViewController {
                         self.present(tabBarController, animated: true, completion: nil)
                     }
                 }
+        }
+        else{
+            self.labelForError.alpha=1
+            self.labelForError.text=myerror
+        }
     }
 }
