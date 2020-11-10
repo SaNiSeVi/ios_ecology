@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpControllerView" customModule="EcoNews" customModuleProvider="target">
             <connections>
+                <outlet property="buttonForSign" destination="8Ec-1X-anA" id="pPg-GW-Jze"/>
                 <outlet property="errorLabel" destination="AQP-K2-EGH" id="Ed0-cN-Qih"/>
                 <outlet property="lastnameTextField" destination="jnW-OY-ABl" id="f0g-1u-Ry6"/>
                 <outlet property="mailTextField" destination="4M9-Gx-806" id="eC7-5U-Agm"/>
@@ -35,11 +36,13 @@
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Почта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4M9-Gx-806">
                     <rect key="frame" x="82" y="392" width="250" height="34"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8zW-ld-PfS">
                     <rect key="frame" x="82" y="451" width="250" height="34"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
@@ -48,7 +51,8 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="vKN-R5-RCG"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="tintColor" systemColor="systemBackgroundColor"/>
                     <state key="normal" title="Регистрация"/>
                     <connections>
                         <action selector="signUpButton:" destination="-1" eventType="touchUpInside" id="kEz-0y-q7r"/>
@@ -56,17 +60,20 @@
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RTi-ie-Dvb">
                     <rect key="frame" x="82" y="260" width="250" height="34"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jnW-OY-ABl">
                     <rect key="frame" x="82" y="326" width="250" height="34"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQP-K2-EGH">
                     <rect key="frame" x="107" y="640" width="200" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemBackgroundColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>

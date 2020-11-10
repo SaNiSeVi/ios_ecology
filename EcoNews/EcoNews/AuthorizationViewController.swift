@@ -12,6 +12,7 @@ class AuthorizationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+         assignbackground()
     }
 
     @IBOutlet weak var imageView: UIImageView!
@@ -19,6 +20,19 @@ class AuthorizationViewController: UIViewController {
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var labelForError: UILabel!
+    
+    func assignbackground(){
+            let background = UIImage(named: "signIn.png")
+
+            var imageView : UIImageView!
+            imageView = UIImageView(frame: view.bounds)
+            imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+            imageView.clipsToBounds = true
+            imageView.image = background
+            imageView.center = view.center
+            view.addSubview(imageView)
+            self.view.sendSubviewToBack(imageView)
+        }
     
     func checkValidData()->String?{
         if loginTextField.text == nil ||
