@@ -5,11 +5,15 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcowPageViewController" customModule="EcoNews" customModuleProvider="target">
             <connections>
+                <outlet property="buttonForAuthprize" destination="slc-1m-4lb" id="uwT-YU-5n2"/>
+                <outlet property="buttonForSignUp" destination="23k-ME-aNt" id="GbO-sg-wCW"/>
+                <outlet property="labelEco" destination="nVa-A9-DgX" id="xRh-8R-GoA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,31 +22,37 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EcoNews" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVa-A9-DgX">
-                    <rect key="frame" x="77" y="166" width="260" height="53"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="44"/>
-                    <nil key="textColor"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EcoNews" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVa-A9-DgX">
+                    <rect key="frame" x="77" y="166" width="260" height="66"/>
+                    <color key="backgroundColor" red="0.54526072739999998" green="0.4567008615" blue="0.56864017249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="55"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slc-1m-4lb">
-                    <rect key="frame" x="77" y="358" width="260" height="30"/>
+                    <rect key="frame" x="77" y="371" width="260" height="58"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
                     <color key="tintColor" red="0.0" green="0.038325563414638761" blue="0.70223402266735757" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Авторизация"/>
+                    <state key="normal" title="Авторизация">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
                     <connections>
                         <action selector="buttonAuthorize:" destination="-1" eventType="touchUpInside" id="Et2-hR-2to"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23k-ME-aNt">
-                    <rect key="frame" x="77" y="440" width="260" height="30"/>
+                    <rect key="frame" x="77" y="481" width="260" height="58"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
                     <color key="tintColor" red="0.044435374440000001" green="0.0" blue="0.72161322829999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Регистрация"/>
+                    <state key="normal" title="Регистрация">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
                     <connections>
                         <action selector="buttonSignIn:" destination="-1" eventType="touchUpInside" id="zPs-eF-UdC"/>
                     </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="0.33315685695022884" green="0.7009386858797928" blue="0.36394622590149778" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="23k-ME-aNt" firstAttribute="top" secondItem="slc-1m-4lb" secondAttribute="bottom" constant="52" id="3IH-1v-9el"/>
                 <constraint firstItem="nVa-A9-DgX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="122" id="GSQ-Ab-iXA"/>
@@ -57,4 +67,12 @@
             <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

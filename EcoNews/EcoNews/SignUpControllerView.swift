@@ -17,10 +17,25 @@ class SignUpControllerView: UIViewController {
     @IBOutlet weak var passwordTextField:UITextField!
     @IBOutlet weak var errorLabel: UILabel!
     
+    @IBOutlet weak var buttonForSign: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        assignbackground()
         // Do any additional setup after loading the view.
+    }
+    
+    func assignbackground(){
+        let background = UIImage(named: "signUp.png")
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubviewToBack(imageView)
+        self.buttonForSign.layer.cornerRadius = 3
     }
     
     func checkValidData()->String?{
@@ -36,6 +51,13 @@ class SignUpControllerView: UIViewController {
         }
         return nil
     }
+  
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if (touches.first) != nil{
+            view.endEditing(true)
+        }
+        super.touchesBegan(touches, with: event)
+    }
 
     @IBAction func signUpButton(_ sender: Any) {
             let error = checkValidData()
@@ -46,7 +68,7 @@ class SignUpControllerView: UIViewController {
                 } else {
                     Auth.auth().createUser(withEmail: mailTextField.text!, password: passwordTextField.text!) { (result, error) in
                         if error != nil {
-                            self.errorLabel.text = "\(error?.localizedDescription)"
+                            self.errorLabel.text = "We have a problem"
                         } else {
                             let db = Firestore.firestore()
                             db.collection("users").addDocument(data: [
