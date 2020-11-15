@@ -28,8 +28,8 @@
 		9C3A58792556AA4500DB29E0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A58772556AA4500DB29E0 /* ProfileViewController.swift */; };
 		9C3A587A2556AA4500DB29E0 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A58782556AA4500DB29E0 /* ProfileViewController.xib */; };
 		9C3A587D2556B24200DB29E0 /* NewsLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A587C2556B24200DB29E0 /* NewsLocation.swift */; };
-		CF4E8BD9255997D40037B038 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF4E8BD8255997D40037B038 /* SettingsViewController.xib */; };
-		CF4E8BDC2559987D0037B038 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4E8BDB2559987D0037B038 /* SettingsViewController.swift */; };
+		CF9F523125619C6700FA2D56 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F522F25619C6700FA2D56 /* SettingsViewController.swift */; };
+		CF9F523225619C6700FA2D56 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF9F523025619C6700FA2D56 /* SettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,8 +57,8 @@
 		9C3A58772556AA4500DB29E0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9C3A58782556AA4500DB29E0 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		9C3A587C2556B24200DB29E0 /* NewsLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLocation.swift; sourceTree = "<group>"; };
-		CF4E8BD8255997D40037B038 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
-		CF4E8BDB2559987D0037B038 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CF9F522F25619C6700FA2D56 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CF9F523025619C6700FA2D56 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		F79222B7078F38E6F5636C05 /* Pods-EcoNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoNews.debug.xcconfig"; path = "Target Support Files/Pods-EcoNews/Pods-EcoNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,8 +133,8 @@
 				9C3A58732556AA3500DB29E0 /* NewsViewController.xib */,
 				9C3A58772556AA4500DB29E0 /* ProfileViewController.swift */,
 				9C3A58782556AA4500DB29E0 /* ProfileViewController.xib */,
-				CF4E8BDB2559987D0037B038 /* SettingsViewController.swift */,
-				CF4E8BD8255997D40037B038 /* SettingsViewController.xib */,
+				CF9F522F25619C6700FA2D56 /* SettingsViewController.swift */,
+				CF9F523025619C6700FA2D56 /* SettingsViewController.xib */,
 				9C3A587C2556B24200DB29E0 /* NewsLocation.swift */,
 				5BF6FD132556CFFB00D0E8A4 /* AuthorizationViewController.swift */,
 				5BF6FD142556CFFB00D0E8A4 /* AuthorizationViewController.xib */,
@@ -206,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF9F523225619C6700FA2D56 /* SettingsViewController.xib in Resources */,
 				9C3A58622556A8FA00DB29E0 /* LaunchScreen.storyboard in Resources */,
 				5BD2C083255993F400E852F6 /* signUp.png in Resources */,
 				9C3A58702556AA2100DB29E0 /* MapViewController.xib in Resources */,
@@ -217,7 +218,6 @@
 				5BF6FD1C2556D97F00D0E8A4 /* SignUpControllerView.xib in Resources */,
 				9C3A587A2556AA4500DB29E0 /* ProfileViewController.xib in Resources */,
 				9C3A58752556AA3500DB29E0 /* NewsViewController.xib in Resources */,
-				CF4E8BD9255997D40037B038 /* SettingsViewController.xib in Resources */,
 				5BD2C082255993F400E852F6 /* backGround.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +279,7 @@
 				9C3A587D2556B24200DB29E0 /* NewsLocation.swift in Sources */,
 				9C3A58562556A8F800DB29E0 /* AppDelegate.swift in Sources */,
 				9C3A58742556AA3500DB29E0 /* NewsViewController.swift in Sources */,
-				CF4E8BDC2559987D0037B038 /* SettingsViewController.swift in Sources */,
+				CF9F523125619C6700FA2D56 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +430,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = GGame.EcoNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -451,7 +451,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = GGame.EcoNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

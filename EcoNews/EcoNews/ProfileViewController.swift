@@ -14,24 +14,24 @@ class ProfileViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBOutlet weak var Profile: UILabel!
+    @IBOutlet weak var LabelName: UILabel!
+    @IBOutlet weak var LabelUsername: UILabel!
+    @IBOutlet weak var LabelEmail: UILabel!
+    @IBOutlet weak var LabelPassword: UILabel!
+    @IBOutlet weak var Password: UILabel!
     
-    @IBOutlet weak var labelName: UILabel!
-    @IBOutlet weak var labelUsername: UILabel!
-    @IBOutlet weak var labelEmail: UILabel!
-    @IBOutlet weak var labelPassword: UILabel!
+    @IBOutlet weak var Name: UILabel!
+    @IBOutlet weak var Username: UILabel!
+    @IBOutlet weak var Email: UILabel!
+   
     
-    @IBOutlet weak var labelBaseName: UILabel!
-    @IBOutlet weak var labelBaseUsername: UILabel!
-    @IBOutlet weak var labelBaseEmail: UILabel!
-    @IBOutlet weak var labelDots: UILabel!
-    
-    @IBAction func buttonEditPassword(_ sender: Any) {
-        let SettingsController = SettingsViewController()
+    @IBAction func PressChangePassword(_ sender: Any) {
+        let SettingsVC = SettingsViewController()
         
-        self.present(SettingsController, animated: true, completion: nil)
+        present(SettingsVC, animated: true, completion: nil)
     }
     
-
     /*
     // MARK: - Navigation
 

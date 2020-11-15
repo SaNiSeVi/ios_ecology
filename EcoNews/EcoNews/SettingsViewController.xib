@@ -9,73 +9,88 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="EcoNews" customModuleProvider="target">
+            <connections>
+                <outlet property="LabelNewPassword" destination="BwB-Ie-gTl" id="5Za-7i-j0g"/>
+                <outlet property="LabelOldPassword" destination="wIP-1x-hO9" id="ff7-u7-Dic"/>
+                <outlet property="Settings" destination="7dj-gg-ReU" id="tNs-AT-Idv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="View" customClass="SettingsViewController" customModule="EcoNews" customModuleProvider="target">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Старый пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqj-Jw-7bW" userLabel="old password">
-                    <rect key="frame" x="56" y="228" width="122" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Настройки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dj-gg-ReU">
+                    <rect key="frame" x="132.5" y="147" width="149" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Новый пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OK-Gz-mrG" userLabel="new password">
-                    <rect key="frame" x="56" y="289" width="114" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Старый пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIP-1x-hO9">
+                    <rect key="frame" x="46" y="243" width="140" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4KD-O4-ysN" userLabel="Старый пароль">
-                    <rect key="frame" x="211" y="221" width="129" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Новый пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwB-Ie-gTl">
+                    <rect key="frame" x="46" y="287" width="131" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xy6-MR-fX4">
+                    <rect key="frame" x="222" y="243" width="169" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="OZB-OL-5T3"/>
+                        <constraint firstAttribute="width" constant="169" id="Wep-ag-CGQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="FieldOld:" destination="-1" eventType="editingDidEnd" id="2D8-ZF-c9l"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dMQ-jD-Yy6">
+                    <rect key="frame" x="222" y="282" width="169" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="9qb-jO-ke6"/>
+                        <constraint firstAttribute="width" constant="169" id="XNz-ZJ-kwN"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                     <connections>
-                        <action selector="FieldOldPassword:" destination="iN0-l3-epB" eventType="editingDidEnd" id="UwG-Jl-DVM"/>
-                        <action selector="fieldOldPassword:" destination="iN0-l3-epB" eventType="editingDidEnd" id="EZa-Eu-EB4"/>
+                        <action selector="FieldNew:" destination="-1" eventType="editingDidEnd" id="cak-y1-5V6"/>
                     </connections>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R62-s5-YQ4" userLabel="Новый пароль">
-                    <rect key="frame" x="211" y="282" width="129" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Gk-d5-8fB">
+                    <rect key="frame" x="146.5" y="364" width="121" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Подтвердить"/>
                     <connections>
-                        <action selector="FieldNewPassword:" destination="iN0-l3-epB" eventType="editingDidEnd" id="tBm-pw-bhg"/>
-                        <action selector="fieldNewPassword:" destination="iN0-l3-epB" eventType="editingDidEnd" id="W0o-e3-aJl"/>
-                    </connections>
-                </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Изменить пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kF-mL-eiX">
-                    <rect key="frame" x="137" y="117" width="140" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3Z-DA-f8W">
-                    <rect key="frame" x="169" y="386" width="77" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Сохранить"/>
-                    <connections>
-                        <action selector="buttonSave:" destination="iN0-l3-epB" eventType="touchUpInside" id="cTh-Kx-sCt"/>
-                        <action selector="touchdownSaveEdit:" destination="iN0-l3-epB" eventType="touchDown" id="yR0-up-vcg"/>
+                        <action selector="ButtonSubmit:" destination="-1" eventType="touchUpInside" id="Ka4-ux-Anp"/>
                     </connections>
                 </button>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dMQ-jD-Yy6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="238" id="30G-7Q-U69"/>
+                <constraint firstItem="8Gk-d5-8fB" firstAttribute="top" secondItem="7dj-gg-ReU" secondAttribute="bottom" constant="181" id="4Z4-dA-3ql"/>
+                <constraint firstItem="wIP-1x-hO9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="KGH-au-cnD"/>
+                <constraint firstItem="8Gk-d5-8fB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VIU-JM-skB"/>
+                <constraint firstItem="7dj-gg-ReU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="103" id="X41-yO-29t"/>
+                <constraint firstItem="7dj-gg-ReU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ceO-hS-VZn"/>
+                <constraint firstItem="xy6-MR-fX4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="199" id="fEV-xF-o71"/>
+                <constraint firstItem="BwB-Ie-gTl" firstAttribute="top" secondItem="wIP-1x-hO9" secondAttribute="bottom" constant="20" id="ioR-zk-DMU"/>
+                <constraint firstItem="BwB-Ie-gTl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="l6n-g6-dGp"/>
+                <constraint firstItem="xy6-MR-fX4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="222" id="pgN-Xa-PjP"/>
+                <constraint firstItem="wIP-1x-hO9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="199" id="rLS-Mg-3AK"/>
+                <constraint firstItem="dMQ-jD-Yy6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="222" id="zRb-3h-Iqw"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <connections>
-                <outlet property="LabelEditPassword" destination="0kF-mL-eiX" id="Yd8-7G-9CS"/>
-                <outlet property="labelEditPassword" destination="0kF-mL-eiX" id="XdB-ca-t98"/>
-                <outlet property="labelNewPassword" destination="6OK-Gz-mrG" id="3VD-gD-0Hf"/>
-                <outlet property="labelOldPassword" destination="vqj-Jw-7bW" id="qdc-ba-ZNm"/>
-            </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
+            <point key="canvasLocation" x="-149.27536231884059" y="84.375"/>
         </view>
     </objects>
     <resources>

@@ -2,7 +2,7 @@
 //  SettingsViewController.swift
 //  EcoNews
 //
-//  Created by Sandzhar Tlepin on 09.11.2020.
+//  Created by Sandzhar Tlepin on 15.11.2020.
 //
 
 import UIKit
@@ -14,29 +14,17 @@ class SettingsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBOutlet weak var Settings: UILabel!
     
-    @IBOutlet weak var labelEditPassword: UILabel!
-    @IBOutlet weak var labelOldPassword: UILabel!
-    @IBOutlet weak var labelNewPassword: UILabel!
-    @IBAction func fieldOldPassword(_ sender: Any) {
+    @IBOutlet weak var LabelOldPassword: UILabel!
+    @IBOutlet weak var LabelNewPassword: UILabel!
+    @IBAction func FieldOld(_ sender: Any) {
     }
-    @IBAction func fieldNewPassword(_ sender: Any) {
+    @IBAction func FieldNew(_ sender: Any) {
     }
-    @IBAction func buttonSave(_ sender: Any) {
+    @IBAction func ButtonSubmit(_ sender: Any) {
     }
     
-    func checkValidData()->String?{
-           if  fieldOldPassword.text == nil ||
-               fieldOldPassword.text == ""  ||
-               fieldNewPassword.text == nil ||
-               fieldNewPassword.text == "" {
-               return "Please fill in all fiels"
-           }
-           return nil
-       }
-    @IBAction func touchdownSaveEdit(_ sender: Any) {
-        
-    }
     
     /*
     // MARK: - Navigation

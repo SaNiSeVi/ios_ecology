@@ -11,14 +11,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="EcoNews" customModuleProvider="target">
             <connections>
+                <outlet property="Email" destination="hJJ-zE-uL7" id="LLZ-cj-PEM"/>
+                <outlet property="LabelEmail" destination="wMq-hQ-hMF" id="TEp-QZ-b6Z"/>
+                <outlet property="LabelName" destination="GyB-iZ-E77" id="aAk-32-FCb"/>
+                <outlet property="LabelPassword" destination="ZVD-T2-h9Z" id="TaQ-rK-cxk"/>
+                <outlet property="LabelUsername" destination="Zet-aZ-76J" id="29h-FB-1FC"/>
+                <outlet property="Name" destination="E4e-93-Kjf" id="c33-aT-mUG"/>
+                <outlet property="Password" destination="Azu-lZ-Ryf" id="9pd-u0-rbp"/>
+                <outlet property="Profile" destination="mxp-tG-QBt" id="T9E-s2-FgY"/>
+                <outlet property="Username" destination="5cN-MV-T6e" id="6aX-eu-xdO"/>
                 <outlet property="labelBaseEmail" destination="hJJ-zE-uL7" id="H0r-Ja-uXc"/>
-                <outlet property="labelBaseName" destination="b9n-EW-DlL" id="V8B-1t-yXO"/>
                 <outlet property="labelBaseUsername" destination="5cN-MV-T6e" id="6nq-2H-0ud"/>
                 <outlet property="labelDots" destination="Azu-lZ-Ryf" id="egl-DU-jbn"/>
-                <outlet property="labelEmail" destination="gxW-6z-TdI" id="jia-hV-yYH"/>
-                <outlet property="labelName" destination="K2e-bc-wls" id="VCO-3a-hkW"/>
-                <outlet property="labelPassword" destination="7Ji-Uz-kCW" id="6Da-od-PkC"/>
-                <outlet property="labelUsername" destination="gxW-6z-TdI" id="GUJ-ol-0Nd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,90 +31,99 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2e-bc-wls">
-                    <rect key="frame" x="46" y="243" width="39" height="24"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Имя пользователя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UR-Xn-5K7">
-                    <rect key="frame" x="46" y="271" width="169" height="24"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxW-6z-TdI">
-                    <rect key="frame" x="46" y="300" width="47" height="24"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ji-Uz-kCW">
-                    <rect key="frame" x="46" y="328" width="69" height="24"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4e-93-Kjf">
-                    <rect key="frame" x="225" y="243" width="52" height="24"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cN-MV-T6e">
-                    <rect key="frame" x="223" y="271" width="95" height="24"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJJ-zE-uL7">
-                    <rect key="frame" x="225" y="300" width="47" height="24"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="******" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azu-lZ-Ryf">
-                    <rect key="frame" x="225" y="332" width="52" height="24"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Профиль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxp-tG-QBt">
-                    <rect key="frame" x="144" y="126" width="125" height="36"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Профиль" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxp-tG-QBt">
+                    <rect key="frame" x="145" y="147" width="124.5" height="36"/>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9n-EW-DlL">
-                    <rect key="frame" x="225" y="243" width="52" height="24"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyB-iZ-E77">
+                    <rect key="frame" x="46" y="243" width="39" height="24"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wc1-Qb-PyL">
-                    <rect key="frame" x="143" y="397" width="126" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя пользователя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zet-aZ-76J">
+                    <rect key="frame" x="46" y="271" width="169" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Почта" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMq-hQ-hMF">
+                    <rect key="frame" x="46" y="299" width="56" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVD-T2-h9Z">
+                    <rect key="frame" x="46" y="327" width="69" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4e-93-Kjf">
+                    <rect key="frame" x="225" y="243" width="52" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cN-MV-T6e">
+                    <rect key="frame" x="225" y="271" width="95" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="******" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azu-lZ-Ryf">
+                    <rect key="frame" x="225" y="327" width="52" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wc1-Qb-PyL">
+                    <rect key="frame" x="144" y="397" width="126" height="30"/>
                     <state key="normal" title="Изменить пароль"/>
                     <connections>
+                        <action selector="ButtonChange:" destination="-1" eventType="touchUpInside" id="uNI-rj-1rm"/>
                         <action selector="EditPasswordAction:" destination="-1" eventType="touchUpInside" id="FRU-ZQ-ter"/>
+                        <action selector="PressChangePassword:" destination="-1" eventType="touchDown" id="FUu-yM-xog"/>
                         <action selector="buttonEditPassword:" destination="-1" eventType="touchUpInside" id="AA8-KA-ONJ"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJJ-zE-uL7">
+                    <rect key="frame" x="225" y="299" width="47" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hJJ-zE-uL7" secondAttribute="trailing" constant="142" id="0wv-1V-CMm"/>
+                <constraint firstItem="mxp-tG-QBt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2di-83-SUs"/>
+                <constraint firstItem="Azu-lZ-Ryf" firstAttribute="top" secondItem="hJJ-zE-uL7" secondAttribute="bottom" constant="4" id="3UF-8y-8Gv"/>
+                <constraint firstItem="hJJ-zE-uL7" firstAttribute="top" secondItem="5cN-MV-T6e" secondAttribute="bottom" constant="4" id="497-vL-0cg"/>
+                <constraint firstItem="ZVD-T2-h9Z" firstAttribute="top" secondItem="wMq-hQ-hMF" secondAttribute="bottom" constant="4" id="5mS-hd-u3M"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="E4e-93-Kjf" secondAttribute="trailing" constant="137" id="7cb-9K-fwZ"/>
+                <constraint firstItem="E4e-93-Kjf" firstAttribute="top" secondItem="mxp-tG-QBt" secondAttribute="bottom" constant="60" id="CEb-Wi-XSr"/>
+                <constraint firstItem="E4e-93-Kjf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="199" id="JM2-vB-7wj"/>
+                <constraint firstItem="GyB-iZ-E77" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="JxC-Ka-uOn"/>
+                <constraint firstItem="wc1-Qb-PyL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="L0B-Yj-IJu"/>
+                <constraint firstItem="Zet-aZ-76J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="L66-PF-1vh"/>
+                <constraint firstItem="mxp-tG-QBt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="103" id="NwJ-op-6l4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5cN-MV-T6e" secondAttribute="trailing" constant="94" id="SJE-df-eda"/>
+                <constraint firstItem="wMq-hQ-hMF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="bt5-P5-kBT"/>
+                <constraint firstItem="ZVD-T2-h9Z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="hOa-lx-W9E"/>
+                <constraint firstItem="wc1-Qb-PyL" firstAttribute="top" secondItem="mxp-tG-QBt" secondAttribute="bottom" constant="214" id="jX0-8F-ncN"/>
+                <constraint firstItem="5cN-MV-T6e" firstAttribute="leading" secondItem="Zet-aZ-76J" secondAttribute="trailing" constant="10" id="mgL-cg-Dih"/>
+                <constraint firstItem="wMq-hQ-hMF" firstAttribute="top" secondItem="Zet-aZ-76J" secondAttribute="bottom" constant="4" id="rJP-bG-hsc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Azu-lZ-Ryf" secondAttribute="trailing" constant="137" id="s63-hZ-Ve5"/>
+                <constraint firstItem="Zet-aZ-76J" firstAttribute="top" secondItem="GyB-iZ-E77" secondAttribute="bottom" constant="4" id="spq-Tp-xTc"/>
+                <constraint firstItem="GyB-iZ-E77" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="199" id="t0f-oT-5iO"/>
+                <constraint firstItem="5cN-MV-T6e" firstAttribute="top" secondItem="E4e-93-Kjf" secondAttribute="bottom" constant="4" id="tfa-Xt-GpS"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="139" y="93"/>
+            <point key="canvasLocation" x="137.68115942028987" y="92.410714285714278"/>
         </view>
     </objects>
     <resources>
