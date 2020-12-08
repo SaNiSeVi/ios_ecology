@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,19 +11,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="EcoNews" customModuleProvider="target">
             <connections>
-                <outlet property="Email" destination="hJJ-zE-uL7" id="LLZ-cj-PEM"/>
-                <outlet property="LabelEmail" destination="wMq-hQ-hMF" id="TEp-QZ-b6Z"/>
-                <outlet property="LabelName" destination="GyB-iZ-E77" id="aAk-32-FCb"/>
-                <outlet property="LabelPassword" destination="ZVD-T2-h9Z" id="TaQ-rK-cxk"/>
-                <outlet property="LabelUsername" destination="Zet-aZ-76J" id="29h-FB-1FC"/>
-                <outlet property="Name" destination="E4e-93-Kjf" id="c33-aT-mUG"/>
-                <outlet property="Password" destination="Azu-lZ-Ryf" id="9pd-u0-rbp"/>
-                <outlet property="Profile" destination="mxp-tG-QBt" id="T9E-s2-FgY"/>
-                <outlet property="Username" destination="5cN-MV-T6e" id="6aX-eu-xdO"/>
-                <outlet property="labelBaseEmail" destination="hJJ-zE-uL7" id="H0r-Ja-uXc"/>
-                <outlet property="labelBaseUsername" destination="5cN-MV-T6e" id="6nq-2H-0ud"/>
-                <outlet property="labelDots" destination="Azu-lZ-Ryf" id="egl-DU-jbn"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="LabelEmail" destination="wMq-hQ-hMF" id="1A7-I5-mgm"/>
+                <outlet property="LabelName" destination="GyB-iZ-E77" id="xQ1-qT-Kfl"/>
+                <outlet property="LabelPage" destination="mxp-tG-QBt" id="QAU-PZ-bir"/>
+                <outlet property="LabelPassword" destination="ZVD-T2-h9Z" id="gsk-3W-Hxh"/>
+                <outlet property="LabelSur" destination="Zet-aZ-76J" id="Vxi-bP-Gxl"/>
+                <outlet property="UserEmail" destination="hJJ-zE-uL7" id="RhO-3j-zyh"/>
+                <outlet property="UserName" destination="E4e-93-Kjf" id="vZd-e7-yrD"/>
+                <outlet property="UserSur" destination="5cN-MV-T6e" id="JNc-PV-DrF"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -43,8 +38,8 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя пользователя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zet-aZ-76J">
-                    <rect key="frame" x="46" y="271" width="169" height="24"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zet-aZ-76J">
+                    <rect key="frame" x="46" y="271" width="85" height="24"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -83,10 +78,7 @@
                     <rect key="frame" x="144" y="397" width="126" height="30"/>
                     <state key="normal" title="Изменить пароль"/>
                     <connections>
-                        <action selector="ButtonChange:" destination="-1" eventType="touchUpInside" id="uNI-rj-1rm"/>
-                        <action selector="EditPasswordAction:" destination="-1" eventType="touchUpInside" id="FRU-ZQ-ter"/>
-                        <action selector="PressChangePassword:" destination="-1" eventType="touchDown" id="FUu-yM-xog"/>
-                        <action selector="buttonEditPassword:" destination="-1" eventType="touchUpInside" id="AA8-KA-ONJ"/>
+                        <action selector="EditPassword:" destination="-1" eventType="touchUpInside" id="z9y-mD-5Gc"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJJ-zE-uL7">
@@ -115,7 +107,6 @@
                 <constraint firstItem="wMq-hQ-hMF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="bt5-P5-kBT"/>
                 <constraint firstItem="ZVD-T2-h9Z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="hOa-lx-W9E"/>
                 <constraint firstItem="wc1-Qb-PyL" firstAttribute="top" secondItem="mxp-tG-QBt" secondAttribute="bottom" constant="214" id="jX0-8F-ncN"/>
-                <constraint firstItem="5cN-MV-T6e" firstAttribute="leading" secondItem="Zet-aZ-76J" secondAttribute="trailing" constant="10" id="mgL-cg-Dih"/>
                 <constraint firstItem="wMq-hQ-hMF" firstAttribute="top" secondItem="Zet-aZ-76J" secondAttribute="bottom" constant="4" id="rJP-bG-hsc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Azu-lZ-Ryf" secondAttribute="trailing" constant="137" id="s63-hZ-Ve5"/>
                 <constraint firstItem="Zet-aZ-76J" firstAttribute="top" secondItem="GyB-iZ-E77" secondAttribute="bottom" constant="4" id="spq-Tp-xTc"/>

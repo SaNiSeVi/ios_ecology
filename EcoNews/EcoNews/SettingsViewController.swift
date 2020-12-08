@@ -6,24 +6,32 @@
 //
 
 import UIKit
+import Firebase
 
 class SettingsViewController: UIViewController {
-
+        //Имя страницы
+        @IBOutlet weak var Settings: UILabel!
+        //Лейблы
+        @IBOutlet weak var LabelOldPassword: UILabel!
+        @IBOutlet weak var LabelNewPassword: UILabel!
+        //Поля ввода
+        @IBAction func FieldOld(_ sender: Any) {
+        }
+        @IBAction func FieldNew(_ sender: Any) {
+        }
+        //Кнопка подтвердить
+        @IBAction func ButtonSubmit(_ sender: Any) {
+        }
+        
+    //viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    @IBOutlet weak var Settings: UILabel!
     
-    @IBOutlet weak var LabelOldPassword: UILabel!
-    @IBOutlet weak var LabelNewPassword: UILabel!
-    @IBAction func FieldOld(_ sender: Any) {
-    }
-    @IBAction func FieldNew(_ sender: Any) {
-    }
-    @IBAction func ButtonSubmit(_ sender: Any) {
-    }
+    //Функция замены пароля
+    
     
     
     /*
