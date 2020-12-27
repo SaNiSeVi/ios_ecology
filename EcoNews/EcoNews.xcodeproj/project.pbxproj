@@ -8,57 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		25E5050528DB6B2C0A52CD8E /* Pods_EcoNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473BA3615631C5BB373693DC /* Pods_EcoNews.framework */; };
-		5BD2C082255993F400E852F6 /* backGround.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2C07F255993F400E852F6 /* backGround.png */; };
-		5BD2C083255993F400E852F6 /* signUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2C080255993F400E852F6 /* signUp.png */; };
-		5BD2C084255993F400E852F6 /* signIn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2C081255993F400E852F6 /* signIn.png */; };
-		5BF6FD152556CFFB00D0E8A4 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF6FD132556CFFB00D0E8A4 /* AuthorizationViewController.swift */; };
-		5BF6FD162556CFFB00D0E8A4 /* AuthorizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF6FD142556CFFB00D0E8A4 /* AuthorizationViewController.xib */; };
-		5BF6FD1B2556D97F00D0E8A4 /* SignUpControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF6FD192556D97F00D0E8A4 /* SignUpControllerView.swift */; };
-		5BF6FD1C2556D97F00D0E8A4 /* SignUpControllerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF6FD1A2556D97F00D0E8A4 /* SignUpControllerView.xib */; };
-		5BF6FD20255705DF00D0E8A4 /* WelcowPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF6FD1E255705DF00D0E8A4 /* WelcowPageViewController.swift */; };
-		5BF6FD21255705DF00D0E8A4 /* WelcowPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF6FD1F255705DF00D0E8A4 /* WelcowPageViewController.xib */; };
 		5BF6FD252557247B00D0E8A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BF6FD242557247B00D0E8A4 /* GoogleService-Info.plist */; };
 		9C3A58562556A8F800DB29E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A58552556A8F800DB29E0 /* AppDelegate.swift */; };
 		9C3A585F2556A8FA00DB29E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A585E2556A8FA00DB29E0 /* Assets.xcassets */; };
-		9C3A58622556A8FA00DB29E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A58602556A8FA00DB29E0 /* LaunchScreen.storyboard */; };
-		9C3A586F2556AA2100DB29E0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A586D2556AA2100DB29E0 /* MapViewController.swift */; };
-		9C3A58702556AA2100DB29E0 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A586E2556AA2100DB29E0 /* MapViewController.xib */; };
-		9C3A58742556AA3500DB29E0 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A58722556AA3500DB29E0 /* NewsViewController.swift */; };
-		9C3A58752556AA3500DB29E0 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A58732556AA3500DB29E0 /* NewsViewController.xib */; };
-		9C3A58792556AA4500DB29E0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A58772556AA4500DB29E0 /* ProfileViewController.swift */; };
-		9C3A587A2556AA4500DB29E0 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A58782556AA4500DB29E0 /* ProfileViewController.xib */; };
-		9C3A587D2556B24200DB29E0 /* NewsLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A587C2556B24200DB29E0 /* NewsLocation.swift */; };
-		CF4E8BD9255997D40037B038 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF4E8BD8255997D40037B038 /* SettingsViewController.xib */; };
-		CF4E8BDC2559987D0037B038 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4E8BDB2559987D0037B038 /* SettingsViewController.swift */; };
+		9CC661D1259930E8006E08FC /* WelcomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC661CB259930E8006E08FC /* WelcomePageViewController.xib */; };
+		9CC661D2259930E8006E08FC /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC661CC259930E8006E08FC /* AuthorizationViewController.swift */; };
+		9CC661D3259930E8006E08FC /* SignUpControllerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC661CD259930E8006E08FC /* SignUpControllerView.xib */; };
+		9CC661D4259930E8006E08FC /* SignUpControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC661CE259930E8006E08FC /* SignUpControllerView.swift */; };
+		9CC661D5259930E8006E08FC /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC661CF259930E8006E08FC /* WelcomePageViewController.swift */; };
+		9CC661D6259930E8006E08FC /* AuthorizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC661D0259930E8006E08FC /* AuthorizationViewController.xib */; };
+		9CC661DE25993101006E08FC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC661DC25993101006E08FC /* MapViewController.swift */; };
+		9CC661DF25993101006E08FC /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC661DD25993101006E08FC /* MapViewController.xib */; };
+		9CC661E525993166006E08FC /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC661E225993166006E08FC /* NewsViewController.xib */; };
+		9CC661E625993166006E08FC /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC661E325993166006E08FC /* NewsViewController.swift */; };
+		9CC661E725993166006E08FC /* NewsLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC661E425993166006E08FC /* NewsLocation.swift */; };
+		9CC661EC2599316E006E08FC /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC661EA2599316E006E08FC /* ProfileViewController.xib */; };
+		9CC661ED2599316E006E08FC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC661EB2599316E006E08FC /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		473BA3615631C5BB373693DC /* Pods_EcoNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BD2C07F255993F400E852F6 /* backGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backGround.png; sourceTree = "<group>"; };
-		5BD2C080255993F400E852F6 /* signUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signUp.png; sourceTree = "<group>"; };
-		5BD2C081255993F400E852F6 /* signIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signIn.png; sourceTree = "<group>"; };
-		5BF6FD132556CFFB00D0E8A4 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
-		5BF6FD142556CFFB00D0E8A4 /* AuthorizationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthorizationViewController.xib; sourceTree = "<group>"; };
-		5BF6FD192556D97F00D0E8A4 /* SignUpControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpControllerView.swift; sourceTree = "<group>"; };
-		5BF6FD1A2556D97F00D0E8A4 /* SignUpControllerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpControllerView.xib; sourceTree = "<group>"; };
-		5BF6FD1E255705DF00D0E8A4 /* WelcowPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcowPageViewController.swift; sourceTree = "<group>"; };
-		5BF6FD1F255705DF00D0E8A4 /* WelcowPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcowPageViewController.xib; sourceTree = "<group>"; };
 		5BF6FD242557247B00D0E8A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7086BF47E1E672F2ABFBE096 /* Pods-EcoNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoNews.release.xcconfig"; path = "Target Support Files/Pods-EcoNews/Pods-EcoNews.release.xcconfig"; sourceTree = "<group>"; };
 		9C3A58522556A8F800DB29E0 /* EcoNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3A58552556A8F800DB29E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C3A585E2556A8FA00DB29E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9C3A58612556A8FA00DB29E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C3A58632556A8FA00DB29E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C3A586D2556AA2100DB29E0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		9C3A586E2556AA2100DB29E0 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
-		9C3A58722556AA3500DB29E0 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
-		9C3A58732556AA3500DB29E0 /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
-		9C3A58772556AA4500DB29E0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		9C3A58782556AA4500DB29E0 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
-		9C3A587C2556B24200DB29E0 /* NewsLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLocation.swift; sourceTree = "<group>"; };
-		CF4E8BD8255997D40037B038 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
-		CF4E8BDB2559987D0037B038 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9CC661CB259930E8006E08FC /* WelcomePageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomePageViewController.xib; sourceTree = "<group>"; };
+		9CC661CC259930E8006E08FC /* AuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		9CC661CD259930E8006E08FC /* SignUpControllerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpControllerView.xib; sourceTree = "<group>"; };
+		9CC661CE259930E8006E08FC /* SignUpControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpControllerView.swift; sourceTree = "<group>"; };
+		9CC661CF259930E8006E08FC /* WelcomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
+		9CC661D0259930E8006E08FC /* AuthorizationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthorizationViewController.xib; sourceTree = "<group>"; };
+		9CC661DC25993101006E08FC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9CC661DD25993101006E08FC /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		9CC661E225993166006E08FC /* NewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		9CC661E325993166006E08FC /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		9CC661E425993166006E08FC /* NewsLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsLocation.swift; sourceTree = "<group>"; };
+		9CC661EA2599316E006E08FC /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		9CC661EB2599316E006E08FC /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F79222B7078F38E6F5636C05 /* Pods-EcoNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoNews.debug.xcconfig"; path = "Target Support Files/Pods-EcoNews/Pods-EcoNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,16 +71,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		5BD2C07E255993B000E852F6 /* ImageForViews */ = {
-			isa = PBXGroup;
-			children = (
-				5BD2C081255993F400E852F6 /* signIn.png */,
-				5BD2C080255993F400E852F6 /* signUp.png */,
-				5BD2C07F255993F400E852F6 /* backGround.png */,
-			);
-			path = ImageForViews;
-			sourceTree = "<group>";
-		};
 		7F4F09CF61913D26C692ABCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +82,6 @@
 		9C3A58492556A8F800DB29E0 = {
 			isa = PBXGroup;
 			children = (
-				5BD2C07E255993B000E852F6 /* ImageForViews */,
 				9C3A58542556A8F800DB29E0 /* EcoNews */,
 				9C3A58532556A8F800DB29E0 /* Products */,
 				40FD60608CB96B61188C9E27 /* Pods */,
@@ -123,28 +100,58 @@
 		9C3A58542556A8F800DB29E0 /* EcoNews */ = {
 			isa = PBXGroup;
 			children = (
-				9C3A58552556A8F800DB29E0 /* AppDelegate.swift */,
 				9C3A585E2556A8FA00DB29E0 /* Assets.xcassets */,
-				9C3A58602556A8FA00DB29E0 /* LaunchScreen.storyboard */,
-				9C3A58632556A8FA00DB29E0 /* Info.plist */,
-				9C3A586D2556AA2100DB29E0 /* MapViewController.swift */,
-				9C3A586E2556AA2100DB29E0 /* MapViewController.xib */,
-				9C3A58722556AA3500DB29E0 /* NewsViewController.swift */,
-				9C3A58732556AA3500DB29E0 /* NewsViewController.xib */,
-				9C3A58772556AA4500DB29E0 /* ProfileViewController.swift */,
-				9C3A58782556AA4500DB29E0 /* ProfileViewController.xib */,
-				CF4E8BDB2559987D0037B038 /* SettingsViewController.swift */,
-				CF4E8BD8255997D40037B038 /* SettingsViewController.xib */,
-				9C3A587C2556B24200DB29E0 /* NewsLocation.swift */,
-				5BF6FD132556CFFB00D0E8A4 /* AuthorizationViewController.swift */,
-				5BF6FD142556CFFB00D0E8A4 /* AuthorizationViewController.xib */,
-				5BF6FD192556D97F00D0E8A4 /* SignUpControllerView.swift */,
-				5BF6FD1A2556D97F00D0E8A4 /* SignUpControllerView.xib */,
-				5BF6FD1E255705DF00D0E8A4 /* WelcowPageViewController.swift */,
-				5BF6FD1F255705DF00D0E8A4 /* WelcowPageViewController.xib */,
 				5BF6FD242557247B00D0E8A4 /* GoogleService-Info.plist */,
+				9C3A58632556A8FA00DB29E0 /* Info.plist */,
+				9CC661CA259930E8006E08FC /* ScreenAuthorization */,
+				9CC661DB25993101006E08FC /* MapScreen */,
+				9CC661E125993166006E08FC /* NewsScreen */,
+				9CC661E92599316E006E08FC /* ProfileScreen */,
+				9C3A58552556A8F800DB29E0 /* AppDelegate.swift */,
 			);
 			path = EcoNews;
+			sourceTree = "<group>";
+		};
+		9CC661CA259930E8006E08FC /* ScreenAuthorization */ = {
+			isa = PBXGroup;
+			children = (
+				9CC661CC259930E8006E08FC /* AuthorizationViewController.swift */,
+				9CC661D0259930E8006E08FC /* AuthorizationViewController.xib */,
+				9CC661CE259930E8006E08FC /* SignUpControllerView.swift */,
+				9CC661CD259930E8006E08FC /* SignUpControllerView.xib */,
+				9CC661CF259930E8006E08FC /* WelcomePageViewController.swift */,
+				9CC661CB259930E8006E08FC /* WelcomePageViewController.xib */,
+			);
+			path = ScreenAuthorization;
+			sourceTree = "<group>";
+		};
+		9CC661DB25993101006E08FC /* MapScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9CC661DC25993101006E08FC /* MapViewController.swift */,
+				9CC661DD25993101006E08FC /* MapViewController.xib */,
+			);
+			name = MapScreen;
+			path = EcoNews/MapScreen;
+			sourceTree = SOURCE_ROOT;
+		};
+		9CC661E125993166006E08FC /* NewsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9CC661E225993166006E08FC /* NewsViewController.xib */,
+				9CC661E325993166006E08FC /* NewsViewController.swift */,
+				9CC661E425993166006E08FC /* NewsLocation.swift */,
+			);
+			path = NewsScreen;
+			sourceTree = "<group>";
+		};
+		9CC661E92599316E006E08FC /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9CC661EA2599316E006E08FC /* ProfileViewController.xib */,
+				9CC661EB2599316E006E08FC /* ProfileViewController.swift */,
+			);
+			path = ProfileScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,19 +213,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C3A58622556A8FA00DB29E0 /* LaunchScreen.storyboard in Resources */,
-				5BD2C083255993F400E852F6 /* signUp.png in Resources */,
-				9C3A58702556AA2100DB29E0 /* MapViewController.xib in Resources */,
+				9CC661EC2599316E006E08FC /* ProfileViewController.xib in Resources */,
+				9CC661D1259930E8006E08FC /* WelcomePageViewController.xib in Resources */,
 				5BF6FD252557247B00D0E8A4 /* GoogleService-Info.plist in Resources */,
-				5BF6FD21255705DF00D0E8A4 /* WelcowPageViewController.xib in Resources */,
-				5BD2C084255993F400E852F6 /* signIn.png in Resources */,
-				5BF6FD162556CFFB00D0E8A4 /* AuthorizationViewController.xib in Resources */,
+				9CC661E525993166006E08FC /* NewsViewController.xib in Resources */,
 				9C3A585F2556A8FA00DB29E0 /* Assets.xcassets in Resources */,
-				5BF6FD1C2556D97F00D0E8A4 /* SignUpControllerView.xib in Resources */,
-				9C3A587A2556AA4500DB29E0 /* ProfileViewController.xib in Resources */,
-				9C3A58752556AA3500DB29E0 /* NewsViewController.xib in Resources */,
-				CF4E8BD9255997D40037B038 /* SettingsViewController.xib in Resources */,
-				5BD2C082255993F400E852F6 /* backGround.png in Resources */,
+				9CC661DF25993101006E08FC /* MapViewController.xib in Resources */,
+				9CC661D6259930E8006E08FC /* AuthorizationViewController.xib in Resources */,
+				9CC661D3259930E8006E08FC /* SignUpControllerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,30 +273,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BF6FD152556CFFB00D0E8A4 /* AuthorizationViewController.swift in Sources */,
-				5BF6FD1B2556D97F00D0E8A4 /* SignUpControllerView.swift in Sources */,
-				9C3A586F2556AA2100DB29E0 /* MapViewController.swift in Sources */,
-				5BF6FD20255705DF00D0E8A4 /* WelcowPageViewController.swift in Sources */,
-				9C3A58792556AA4500DB29E0 /* ProfileViewController.swift in Sources */,
-				9C3A587D2556B24200DB29E0 /* NewsLocation.swift in Sources */,
+				9CC661D2259930E8006E08FC /* AuthorizationViewController.swift in Sources */,
+				9CC661E725993166006E08FC /* NewsLocation.swift in Sources */,
 				9C3A58562556A8F800DB29E0 /* AppDelegate.swift in Sources */,
-				9C3A58742556AA3500DB29E0 /* NewsViewController.swift in Sources */,
-				CF4E8BDC2559987D0037B038 /* SettingsViewController.swift in Sources */,
+				9CC661D5259930E8006E08FC /* WelcomePageViewController.swift in Sources */,
+				9CC661E625993166006E08FC /* NewsViewController.swift in Sources */,
+				9CC661DE25993101006E08FC /* MapViewController.swift in Sources */,
+				9CC661ED2599316E006E08FC /* ProfileViewController.swift in Sources */,
+				9CC661D4259930E8006E08FC /* SignUpControllerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		9C3A58602556A8FA00DB29E0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C3A58612556A8FA00DB29E0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9C3A58642556A8FA00DB29E0 /* Debug */ = {

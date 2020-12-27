@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WelcowPageViewController: UIViewController {
+class WelcomePageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

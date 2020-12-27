@@ -17,7 +17,7 @@ var window: UIWindow?
         // main
         FirebaseApp.configure()
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        let welcomeVC = WelcowPageViewController()
+        let welcomeVC = WelcomePageViewController()
         // visual main
         self.window?.rootViewController = welcomeVC
         self.window?.makeKeyAndVisible()
