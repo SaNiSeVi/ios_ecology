@@ -9,6 +9,8 @@ import UIKit
 
 class WelcomePageViewController: UIViewController {
 
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         assignbackground()
@@ -16,8 +18,9 @@ class WelcomePageViewController: UIViewController {
     }
     @IBOutlet weak var labelEco: UILabel!
     @IBOutlet weak var buttonForAuthprize: UIButton!
+
     @IBOutlet weak var buttonForSignUp: UIButton!
-    
+
     func assignbackground(){
             let background = UIImage(named: "backGround.png")
 
@@ -33,16 +36,21 @@ class WelcomePageViewController: UIViewController {
         self.buttonForAuthprize.backgroundColor = #colorLiteral(red: 0.5870402455, green: 0.4427049458, blue: 0.5894571543, alpha: 1).withAlphaComponent(0.7)
         self.buttonForSignUp.backgroundColor = #colorLiteral(red: 0.5870402455, green: 0.4427049458, blue: 0.5894571543, alpha: 1).withAlphaComponent(0.7)
         }
-    
-    
+
+
     @IBAction func buttonAuthorize(_ sender: Any) {
-        let authorizationVC = AuthorizationViewController()
-        present(authorizationVC, animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "Authorization", bundle: nil)
+        let authVC = storyboard.instantiateViewController(withIdentifier: "AuthID") as UIViewController
+       
+        show(authVC, sender: nil)
+        //present(authorizationVC, animated: true, completion: nil)
     }
-    
-    
+
+
     @IBAction func buttonSignIn(_ sender: Any) {
-        let signUpVC = SignUpControllerView()
-        present(signUpVC, animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "SignUp", bundle: nil)
+        let signVC = storyboard.instantiateViewController(withIdentifier: "SignUpID") as UIViewController
+        show(signVC, sender: nil)
+      //  present(signUpVC, animated: true, completion: nil)
     }
 }

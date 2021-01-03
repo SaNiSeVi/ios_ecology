@@ -59,28 +59,16 @@ class AuthorizationViewController: UIViewController {
                     self.labelForError.alpha = 1
                     self.labelForError.text = "User is not found"
                     } else {
-                        let mapVC = MapViewController()
-                        let newsVC = NewsViewController()
-                        let profileVC = ProfileViewController()
-                        let tabBarController = UITabBarController()
-
-                        // settings controller
-                        mapVC.tabBarItem = UITabBarItem(title: "Map", image: UIImage(named: "placeholder"), selectedImage: nil)
-                        newsVC.tabBarItem = UITabBarItem(title: "News", image: UIImage(named: "newspaper"), selectedImage: nil)
-                        profileVC.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(named: "user"), selectedImage: nil)
-
-                        // visual contollers in tabbar
-                        tabBarController.viewControllers = [mapVC,newsVC,profileVC]
-                        
-                        tabBarController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
-                        
-                        self.present(tabBarController, animated: true, completion: nil)
+                        let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
+                        let tabBarVC = storyboard.instantiateViewController(withIdentifier: "TabBarID") as UIViewController
+                        tabBarVC.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+                        self.present(tabBarVC, animated: true, completion: nil)
                     }
                 }
         }
         else{
-            self.labelForError.alpha=1
-            self.labelForError.text=myerror
+            self.labelForError.alpha = 1
+            self.labelForError.text = myerror
         }
     }
 }

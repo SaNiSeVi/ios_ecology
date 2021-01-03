@@ -11,19 +11,21 @@
 		5BF6FD252557247B00D0E8A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BF6FD242557247B00D0E8A4 /* GoogleService-Info.plist */; };
 		9C3A58562556A8F800DB29E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A58552556A8F800DB29E0 /* AppDelegate.swift */; };
 		9C3A585F2556A8FA00DB29E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A585E2556A8FA00DB29E0 /* Assets.xcassets */; };
-		9CC661D1259930E8006E08FC /* WelcomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC661CB259930E8006E08FC /* WelcomePageViewController.xib */; };
+		9C3A853025A1253800D7950D /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A852F25A1253800D7950D /* Welcome.storyboard */; };
+		9C3A854F25A139D400D7950D /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A854E25A139D400D7950D /* SignUp.storyboard */; };
+		9C3A855325A13C9F00D7950D /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A855225A13C9F00D7950D /* Profile.storyboard */; };
+		9C3A855725A1455F00D7950D /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A855625A1455F00D7950D /* TabBar.storyboard */; };
+		9C3A855A25A14ECF00D7950D /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A855925A14ECF00D7950D /* Map.storyboard */; };
+		9C3A855E25A150C700D7950D /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A855D25A150C700D7950D /* Authorization.storyboard */; };
 		9CC661D2259930E8006E08FC /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC661CC259930E8006E08FC /* AuthorizationViewController.swift */; };
-		9CC661D3259930E8006E08FC /* SignUpControllerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC661CD259930E8006E08FC /* SignUpControllerView.xib */; };
 		9CC661D4259930E8006E08FC /* SignUpControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC661CE259930E8006E08FC /* SignUpControllerView.swift */; };
 		9CC661D5259930E8006E08FC /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC661CF259930E8006E08FC /* WelcomePageViewController.swift */; };
-		9CC661D6259930E8006E08FC /* AuthorizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC661D0259930E8006E08FC /* AuthorizationViewController.xib */; };
 		9CC661DE25993101006E08FC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC661DC25993101006E08FC /* MapViewController.swift */; };
-		9CC661DF25993101006E08FC /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC661DD25993101006E08FC /* MapViewController.xib */; };
-		9CC661E525993166006E08FC /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC661E225993166006E08FC /* NewsViewController.xib */; };
-		9CC661E625993166006E08FC /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC661E325993166006E08FC /* NewsViewController.swift */; };
-		9CC661E725993166006E08FC /* NewsLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC661E425993166006E08FC /* NewsLocation.swift */; };
-		9CC661EC2599316E006E08FC /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC661EA2599316E006E08FC /* ProfileViewController.xib */; };
 		9CC661ED2599316E006E08FC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC661EB2599316E006E08FC /* ProfileViewController.swift */; };
+		9CC8EB4C259CE8C8009689E3 /* PartsOfNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC8EB4B259CE8C8009689E3 /* PartsOfNews.swift */; };
+		9CC8EB82259D30DB009689E3 /* NewsLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC8EB81259D30DB009689E3 /* NewsLocation.swift */; };
+		9CC8EB88259D3338009689E3 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC8EB86259D3338009689E3 /* NewsViewController.swift */; };
+		9CC8EB93259D35CA009689E3 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC8EB95259D35CA009689E3 /* News.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,19 +36,21 @@
 		9C3A58552556A8F800DB29E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C3A585E2556A8FA00DB29E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C3A58632556A8FA00DB29E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CC661CB259930E8006E08FC /* WelcomePageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomePageViewController.xib; sourceTree = "<group>"; };
+		9C3A852F25A1253800D7950D /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		9C3A854E25A139D400D7950D /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		9C3A855225A13C9F00D7950D /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		9C3A855625A1455F00D7950D /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		9C3A855925A14ECF00D7950D /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		9C3A855D25A150C700D7950D /* Authorization.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
 		9CC661CC259930E8006E08FC /* AuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
-		9CC661CD259930E8006E08FC /* SignUpControllerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpControllerView.xib; sourceTree = "<group>"; };
 		9CC661CE259930E8006E08FC /* SignUpControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpControllerView.swift; sourceTree = "<group>"; };
 		9CC661CF259930E8006E08FC /* WelcomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
-		9CC661D0259930E8006E08FC /* AuthorizationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthorizationViewController.xib; sourceTree = "<group>"; };
 		9CC661DC25993101006E08FC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		9CC661DD25993101006E08FC /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
-		9CC661E225993166006E08FC /* NewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
-		9CC661E325993166006E08FC /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
-		9CC661E425993166006E08FC /* NewsLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsLocation.swift; sourceTree = "<group>"; };
-		9CC661EA2599316E006E08FC /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		9CC661EB2599316E006E08FC /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9CC8EB4B259CE8C8009689E3 /* PartsOfNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartsOfNews.swift; sourceTree = "<group>"; };
+		9CC8EB81259D30DB009689E3 /* NewsLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLocation.swift; sourceTree = "<group>"; };
+		9CC8EB86259D3338009689E3 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		9CC8EB94259D35CA009689E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/News.storyboard; sourceTree = "<group>"; };
 		F79222B7078F38E6F5636C05 /* Pods-EcoNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoNews.debug.xcconfig"; path = "Target Support Files/Pods-EcoNews/Pods-EcoNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +112,7 @@
 				9CC661E125993166006E08FC /* NewsScreen */,
 				9CC661E92599316E006E08FC /* ProfileScreen */,
 				9C3A58552556A8F800DB29E0 /* AppDelegate.swift */,
+				9C3A855625A1455F00D7950D /* TabBar.storyboard */,
 			);
 			path = EcoNews;
 			sourceTree = "<group>";
@@ -116,11 +121,11 @@
 			isa = PBXGroup;
 			children = (
 				9CC661CC259930E8006E08FC /* AuthorizationViewController.swift */,
-				9CC661D0259930E8006E08FC /* AuthorizationViewController.xib */,
+				9C3A855D25A150C700D7950D /* Authorization.storyboard */,
 				9CC661CE259930E8006E08FC /* SignUpControllerView.swift */,
-				9CC661CD259930E8006E08FC /* SignUpControllerView.xib */,
+				9C3A854E25A139D400D7950D /* SignUp.storyboard */,
 				9CC661CF259930E8006E08FC /* WelcomePageViewController.swift */,
-				9CC661CB259930E8006E08FC /* WelcomePageViewController.xib */,
+				9C3A852F25A1253800D7950D /* Welcome.storyboard */,
 			);
 			path = ScreenAuthorization;
 			sourceTree = "<group>";
@@ -129,7 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				9CC661DC25993101006E08FC /* MapViewController.swift */,
-				9CC661DD25993101006E08FC /* MapViewController.xib */,
+				9CC8EB81259D30DB009689E3 /* NewsLocation.swift */,
+				9C3A855925A14ECF00D7950D /* Map.storyboard */,
 			);
 			name = MapScreen;
 			path = EcoNews/MapScreen;
@@ -138,9 +144,9 @@
 		9CC661E125993166006E08FC /* NewsScreen */ = {
 			isa = PBXGroup;
 			children = (
-				9CC661E225993166006E08FC /* NewsViewController.xib */,
-				9CC661E325993166006E08FC /* NewsViewController.swift */,
-				9CC661E425993166006E08FC /* NewsLocation.swift */,
+				9CC8EB4B259CE8C8009689E3 /* PartsOfNews.swift */,
+				9CC8EB86259D3338009689E3 /* NewsViewController.swift */,
+				9CC8EB95259D35CA009689E3 /* News.storyboard */,
 			);
 			path = NewsScreen;
 			sourceTree = "<group>";
@@ -148,8 +154,8 @@
 		9CC661E92599316E006E08FC /* ProfileScreen */ = {
 			isa = PBXGroup;
 			children = (
-				9CC661EA2599316E006E08FC /* ProfileViewController.xib */,
 				9CC661EB2599316E006E08FC /* ProfileViewController.swift */,
+				9C3A855225A13C9F00D7950D /* Profile.storyboard */,
 			);
 			path = ProfileScreen;
 			sourceTree = "<group>";
@@ -213,14 +219,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CC661EC2599316E006E08FC /* ProfileViewController.xib in Resources */,
-				9CC661D1259930E8006E08FC /* WelcomePageViewController.xib in Resources */,
 				5BF6FD252557247B00D0E8A4 /* GoogleService-Info.plist in Resources */,
-				9CC661E525993166006E08FC /* NewsViewController.xib in Resources */,
+				9C3A855725A1455F00D7950D /* TabBar.storyboard in Resources */,
+				9C3A854F25A139D400D7950D /* SignUp.storyboard in Resources */,
+				9CC8EB93259D35CA009689E3 /* News.storyboard in Resources */,
 				9C3A585F2556A8FA00DB29E0 /* Assets.xcassets in Resources */,
-				9CC661DF25993101006E08FC /* MapViewController.xib in Resources */,
-				9CC661D6259930E8006E08FC /* AuthorizationViewController.xib in Resources */,
-				9CC661D3259930E8006E08FC /* SignUpControllerView.xib in Resources */,
+				9C3A853025A1253800D7950D /* Welcome.storyboard in Resources */,
+				9C3A855E25A150C700D7950D /* Authorization.storyboard in Resources */,
+				9C3A855325A13C9F00D7950D /* Profile.storyboard in Resources */,
+				9C3A855A25A14ECF00D7950D /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,18 +280,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CC8EB82259D30DB009689E3 /* NewsLocation.swift in Sources */,
 				9CC661D2259930E8006E08FC /* AuthorizationViewController.swift in Sources */,
-				9CC661E725993166006E08FC /* NewsLocation.swift in Sources */,
 				9C3A58562556A8F800DB29E0 /* AppDelegate.swift in Sources */,
 				9CC661D5259930E8006E08FC /* WelcomePageViewController.swift in Sources */,
-				9CC661E625993166006E08FC /* NewsViewController.swift in Sources */,
+				9CC8EB4C259CE8C8009689E3 /* PartsOfNews.swift in Sources */,
 				9CC661DE25993101006E08FC /* MapViewController.swift in Sources */,
+				9CC8EB88259D3338009689E3 /* NewsViewController.swift in Sources */,
 				9CC661ED2599316E006E08FC /* ProfileViewController.swift in Sources */,
 				9CC661D4259930E8006E08FC /* SignUpControllerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9CC8EB95259D35CA009689E3 /* News.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CC8EB94259D35CA009689E3 /* Base */,
+			);
+			name = News.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9C3A58642556A8FA00DB29E0 /* Debug */ = {
