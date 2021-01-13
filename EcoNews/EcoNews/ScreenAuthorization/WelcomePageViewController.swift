@@ -42,7 +42,8 @@ class WelcomePageViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Authorization", bundle: nil)
         let authVC = storyboard.instantiateViewController(withIdentifier: "AuthID") as UIViewController
        
-        show(authVC, sender: nil)
+        authVC.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        present(authVC, animated: true, completion: nil)
         //present(authorizationVC, animated: true, completion: nil)
     }
 
@@ -50,7 +51,8 @@ class WelcomePageViewController: UIViewController {
     @IBAction func buttonSignIn(_ sender: Any) {
         let storyboard = UIStoryboard(name: "SignUp", bundle: nil)
         let signVC = storyboard.instantiateViewController(withIdentifier: "SignUpID") as UIViewController
-        show(signVC, sender: nil)
+        signVC.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        present(signVC, animated: true, completion: nil)
       //  present(signUpVC, animated: true, completion: nil)
     }
 }

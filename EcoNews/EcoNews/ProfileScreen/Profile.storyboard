@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gy3-ck-UpA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gy3-ck-UpA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,27 +17,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Профиль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPT-vA-Sgt">
-                                <rect key="frame" x="145" y="296" width="125" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Снимок экрана 2021-01-07 в 19.23.48" translatesAutoresizingMaskIntoConstraints="NO" id="M5r-Ne-dGz">
+                                <rect key="frame" x="117" y="44" width="180" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="afQ-9y-eJ9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Почта" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cT8-gM-e8A">
+                                <rect key="frame" x="117" y="461.5" width="180" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cT8-gM-e8A" secondAttribute="height" multiplier="4:1" id="z8z-WO-wYO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjD-mo-mjd">
+                                <rect key="frame" x="117" y="372.5" width="180" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IjD-mo-mjd" secondAttribute="height" multiplier="4:1" id="4Jb-TF-40I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlC-Sn-4Ae">
+                                <rect key="frame" x="117" y="308" width="180" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rQO-RR-TRc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cT8-gM-e8A" firstAttribute="top" secondItem="IjD-mo-mjd" secondAttribute="bottom" constant="44" id="0ku-Va-ohg"/>
+                            <constraint firstItem="M5r-Ne-dGz" firstAttribute="trailing" secondItem="nlC-Sn-4Ae" secondAttribute="trailing" id="2z0-kM-sN4"/>
+                            <constraint firstItem="M5r-Ne-dGz" firstAttribute="leading" secondItem="cT8-gM-e8A" secondAttribute="leading" id="EVW-n1-lgl"/>
+                            <constraint firstItem="M5r-Ne-dGz" firstAttribute="leading" secondItem="IjD-mo-mjd" secondAttribute="leading" id="TrL-ik-euj"/>
+                            <constraint firstItem="M5r-Ne-dGz" firstAttribute="leading" secondItem="rQO-RR-TRc" secondAttribute="leading" constant="117" id="VHM-ZC-ELY"/>
+                            <constraint firstItem="M5r-Ne-dGz" firstAttribute="trailing" secondItem="IjD-mo-mjd" secondAttribute="trailing" id="WIG-GF-uh7"/>
+                            <constraint firstItem="M5r-Ne-dGz" firstAttribute="centerX" secondItem="dNn-tu-kxC" secondAttribute="centerX" id="X62-ma-WgV"/>
+                            <constraint firstItem="IjD-mo-mjd" firstAttribute="top" secondItem="nlC-Sn-4Ae" secondAttribute="bottom" constant="44" id="de7-cS-UWg"/>
+                            <constraint firstItem="M5r-Ne-dGz" firstAttribute="trailing" secondItem="cT8-gM-e8A" secondAttribute="trailing" id="fvX-oG-9LV"/>
+                            <constraint firstItem="M5r-Ne-dGz" firstAttribute="top" secondItem="rQO-RR-TRc" secondAttribute="top" id="pLJ-t8-4Pw"/>
+                            <constraint firstItem="nlC-Sn-4Ae" firstAttribute="top" secondItem="M5r-Ne-dGz" secondAttribute="bottom" constant="44" id="rpf-q8-HXk"/>
+                            <constraint firstItem="nlC-Sn-4Ae" firstAttribute="leading" secondItem="rQO-RR-TRc" secondAttribute="leading" constant="117" id="tpQ-oN-dzl"/>
+                            <constraint firstItem="M5r-Ne-dGz" firstAttribute="leading" secondItem="nlC-Sn-4Ae" secondAttribute="leading" id="zcy-tQ-bIz"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="user" id="DIA-7A-Fo5"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="emailAdressLabel" destination="cT8-gM-e8A" id="ymS-h1-cd8"/>
+                        <outlet property="firstNameLabel" destination="nlC-Sn-4Ae" id="oVR-7v-TYm"/>
+                        <outlet property="photoUi" destination="M5r-Ne-dGz" id="yw5-FO-QSF"/>
+                        <outlet property="secondNameLabel" destination="IjD-mo-mjd" id="GEe-ce-QcK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mkb-bE-wLb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="317" y="-97"/>
+            <point key="canvasLocation" x="314.49275362318843" y="-97.098214285714278"/>
         </scene>
     </scenes>
     <resources>
         <image name="user" width="25" height="25"/>
+        <image name="Снимок экрана 2021-01-07 в 19.23.48" width="400" height="404"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

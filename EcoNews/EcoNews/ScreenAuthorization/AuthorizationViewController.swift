@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class AuthorizationViewController: UIViewController {
 
@@ -20,6 +21,10 @@ class AuthorizationViewController: UIViewController {
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var labelForError: UILabel!
+    
+    @IBAction func exitButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
     func assignbackground(){
             let background = UIImage(named: "signIn.png")
