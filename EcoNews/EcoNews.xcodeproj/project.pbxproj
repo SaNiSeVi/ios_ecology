@@ -17,6 +17,8 @@
 		9C3A855725A1455F00D7950D /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A855625A1455F00D7950D /* TabBar.storyboard */; };
 		9C3A855A25A14ECF00D7950D /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A855925A14ECF00D7950D /* Map.storyboard */; };
 		9C3A855E25A150C700D7950D /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A855D25A150C700D7950D /* Authorization.storyboard */; };
+		9C6DC22525AA7F660078C928 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DC22325AA7F660078C928 /* TableViewCell.swift */; };
+		9C6DC22625AA7F660078C928 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C6DC22425AA7F660078C928 /* TableViewCell.xib */; };
 		9CC661D2259930E8006E08FC /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC661CC259930E8006E08FC /* AuthorizationViewController.swift */; };
 		9CC661D4259930E8006E08FC /* SignUpControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC661CE259930E8006E08FC /* SignUpControllerView.swift */; };
 		9CC661D5259930E8006E08FC /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC661CF259930E8006E08FC /* WelcomePageViewController.swift */; };
@@ -42,6 +44,8 @@
 		9C3A855625A1455F00D7950D /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		9C3A855925A14ECF00D7950D /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		9C3A855D25A150C700D7950D /* Authorization.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
+		9C6DC22325AA7F660078C928 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		9C6DC22425AA7F660078C928 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		9CC661CC259930E8006E08FC /* AuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		9CC661CE259930E8006E08FC /* SignUpControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpControllerView.swift; sourceTree = "<group>"; };
 		9CC661CF259930E8006E08FC /* WelcomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 				9CC8EB4B259CE8C8009689E3 /* PartsOfNews.swift */,
 				9CC8EB86259D3338009689E3 /* NewsViewController.swift */,
 				9CC8EB95259D35CA009689E3 /* News.storyboard */,
+				9C6DC22325AA7F660078C928 /* TableViewCell.swift */,
+				9C6DC22425AA7F660078C928 /* TableViewCell.xib */,
 			);
 			path = NewsScreen;
 			sourceTree = "<group>";
@@ -220,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BF6FD252557247B00D0E8A4 /* GoogleService-Info.plist in Resources */,
+				9C6DC22625AA7F660078C928 /* TableViewCell.xib in Resources */,
 				9C3A855725A1455F00D7950D /* TabBar.storyboard in Resources */,
 				9C3A854F25A139D400D7950D /* SignUp.storyboard in Resources */,
 				9CC8EB93259D35CA009689E3 /* News.storyboard in Resources */,
@@ -285,6 +292,7 @@
 				9C3A58562556A8F800DB29E0 /* AppDelegate.swift in Sources */,
 				9CC661D5259930E8006E08FC /* WelcomePageViewController.swift in Sources */,
 				9CC8EB4C259CE8C8009689E3 /* PartsOfNews.swift in Sources */,
+				9C6DC22525AA7F660078C928 /* TableViewCell.swift in Sources */,
 				9CC661DE25993101006E08FC /* MapViewController.swift in Sources */,
 				9CC8EB88259D3338009689E3 /* NewsViewController.swift in Sources */,
 				9CC661ED2599316E006E08FC /* ProfileViewController.swift in Sources */,

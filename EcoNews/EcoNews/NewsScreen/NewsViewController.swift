@@ -9,9 +9,12 @@ import UIKit
 
 class NewsViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    let reuseIdentifier = "recipe cell"
     var categories = PartsOfNews.allNews
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: reuseIdentifier)
     }
 }
 
@@ -27,13 +30,12 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier,for: indexPath) as! TableViewCell
         let news = categories[indexPath.section].news[indexPath.row]
-        cell.textLabel?.text = news.title
-        cell.detailTextLabel?.text = news.info
-        // Количество строк не ограничено в описании новости
-        cell.textLabel?.numberOfLines = 0
-        cell.detailTextLabel?.numberOfLines = 0
+        cell.labelTitle.text = news.title
+        cell.labelText.text = news.info
+        cell.imageCell.image = news.photo
         return cell
     }
     

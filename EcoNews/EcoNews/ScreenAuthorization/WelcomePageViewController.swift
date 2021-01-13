@@ -6,15 +6,13 @@
 //
 
 import UIKit
-
+import SwiftSoup
 class WelcomePageViewController: UIViewController {
 
-
-    
+    @IBOutlet weak var image: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         assignbackground()
-        // Do any additional setup after loading the view.
     }
     @IBOutlet weak var labelEco: UILabel!
     @IBOutlet weak var buttonForAuthprize: UIButton!
@@ -54,3 +52,5 @@ class WelcomePageViewController: UIViewController {
       //  present(signUpVC, animated: true, completion: nil)
     }
 }
+
+

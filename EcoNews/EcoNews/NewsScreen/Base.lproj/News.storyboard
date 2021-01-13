@@ -37,6 +37,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="News" image="newspaper" id="HIS-u7-I3m"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="6Wx-SY-4Fz" id="3KE-Nj-waL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Z6-AF-Saw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

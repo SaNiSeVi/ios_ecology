@@ -80,7 +80,7 @@ class SignUpControllerView: UIViewController {
                                 if error != nil {
                                     self.errorLabel.text = "Error saving user in database"
                                 }
-                                print(result!.user.uid)
+                              //  print(result!.user.uid)
                             }
                             let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
                             let tabBarVC = storyboard.instantiateViewController(withIdentifier: "TabBarID") as UIViewController
