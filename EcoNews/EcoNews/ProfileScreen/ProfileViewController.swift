@@ -53,43 +53,4 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var secondNameLabel: UILabel!
     @IBOutlet weak var emailAdressLabel: UILabel!
     
-
-
-    
-    
-    func getData(onSuccsess: @escaping ()-> Void, onError: @escaping (_ error: Error?) ->Void ){
-            let ref = Database.database().reference()
-            let defaults = UserDefaults.standard
-            
-            guard let uid = Auth.auth().currentUser?.uid else{
-                print("User not found")
-            return
-            }
-            
-            ref.child("users").child(uid).observe(.value) { (snapshot) in
-                if let dictionary = snapshot.value as? [String: Any] {
-                    let firstname = dictionary["firstname"] as! String
-                    let lastname = dictionary["lastname"] as! String
-                    let email = dictionary["email"] as! String
-                    
-                    defaults.set(firstname,forKey: "UserFirstName")
-                    defaults.set(lastname,forKey: "UserLastName")
-                    defaults.set(email,forKey: "UserEmail")
-                }
-            } withCancel: { (error) in
-                onError(error)
-            }
-
-        }
-    static func createAlertController(title: String, message: String) -> UIAlertController {
-            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-            
-            let okAction = UIAlertAction(title: "Ok", style: .default) { (action) in
-                alert.dismiss(animated: true, completion: nil)
-            }
-            
-            alert.addAction(okAction)
-            
-            return alert
-        }
 }
