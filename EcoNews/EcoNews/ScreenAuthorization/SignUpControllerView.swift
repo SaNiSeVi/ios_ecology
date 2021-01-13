@@ -19,6 +19,11 @@ class SignUpControllerView: UIViewController {
     
     @IBOutlet weak var buttonForSign: UIButton!
     
+    
+    @IBAction func exitButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         assignbackground()
@@ -60,18 +65,17 @@ class SignUpControllerView: UIViewController {
     }
 
     @IBAction func signUpButton(_ sender: Any) {
-            let error = checkValidData()
-
+                let error = checkValidData()
                 if error != nil {
                     errorLabel.alpha = 1
                     errorLabel.text = error
                 } else {
                     Auth.auth().createUser(withEmail: mailTextField.text!, password: passwordTextField.text!) { (result, error) in
                         if error != nil {
-                            self.errorLabel.text = "We have a problem"
+                            self.errorLabel.text = "error of signUp"
                         } else {
                             let db = Firestore.firestore()
-                            db.collection("users").addDocument(data: [
+                            db.collection("users").document(self.mailTextField.text!).setData([
                                 "firstname": self.nameTextField.text!,
                                 "lastname": self.lastnameTextField.text!,
                                 "email": self.mailTextField.text!,
@@ -86,9 +90,8 @@ class SignUpControllerView: UIViewController {
                             let tabBarVC = storyboard.instantiateViewController(withIdentifier: "TabBarID") as UIViewController
                             tabBarVC.modalPresentationStyle = UIModalPresentationStyle.fullScreen
                             self.present(tabBarVC, animated: true, completion: nil)
-                           
                         }
                     }
-                } 
+                }
     }
 }

@@ -45,10 +45,6 @@
                                     <action selector="buttonSignIn:" destination="YfA-8U-PYZ" eventType="touchUpInside" id="NEo-gw-S9l"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0nb-Nm-dMJ">
-                                <rect key="frame" x="97" y="688" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KeU-8J-meg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -67,7 +63,6 @@
                     <connections>
                         <outlet property="buttonForAuthprize" destination="PXk-BC-6qg" id="t22-mj-uxb"/>
                         <outlet property="buttonForSignUp" destination="wOY-Wf-ccv" id="qtf-Vh-T0x"/>
-                        <outlet property="image" destination="0nb-Nm-dMJ" id="Tvm-hV-F66"/>
                         <outlet property="labelEco" destination="mqk-d4-sft" id="7Pw-Gz-VDJ"/>
                     </connections>
                 </viewController>
