@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		25E5050528DB6B2C0A52CD8E /* Pods_EcoNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473BA3615631C5BB373693DC /* Pods_EcoNews.framework */; };
-		5BA4CE3A25ADAA05006779F5 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA4CE3925ADAA05006779F5 /* Settings.storyboard */; };
-		5BA4CE4125ADADCE006779F5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4CE4025ADADCE006779F5 /* SettingsViewController.swift */; };
 		5BF6FD252557247B00D0E8A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BF6FD242557247B00D0E8A4 /* GoogleService-Info.plist */; };
 		9C3A58562556A8F800DB29E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A58552556A8F800DB29E0 /* AppDelegate.swift */; };
 		9C3A585F2556A8FA00DB29E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C3A585E2556A8FA00DB29E0 /* Assets.xcassets */; };
@@ -32,8 +30,6 @@
 
 /* Begin PBXFileReference section */
 		473BA3615631C5BB373693DC /* Pods_EcoNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BA4CE3925ADAA05006779F5 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		5BA4CE4025ADADCE006779F5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5BF6FD242557247B00D0E8A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7086BF47E1E672F2ABFBE096 /* Pods-EcoNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoNews.release.xcconfig"; path = "Target Support Files/Pods-EcoNews/Pods-EcoNews.release.xcconfig"; sourceTree = "<group>"; };
 		9C3A58522556A8F800DB29E0 /* EcoNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,8 +156,6 @@
 			children = (
 				9CC661EB2599316E006E08FC /* ProfileViewController.swift */,
 				9C3A855225A13C9F00D7950D /* Profile.storyboard */,
-				5BA4CE3925ADAA05006779F5 /* Settings.storyboard */,
-				5BA4CE4025ADADCE006779F5 /* SettingsViewController.swift */,
 			);
 			path = ProfileScreen;
 			sourceTree = "<group>";
@@ -234,7 +228,6 @@
 				9C3A855E25A150C700D7950D /* Authorization.storyboard in Resources */,
 				9C3A855325A13C9F00D7950D /* Profile.storyboard in Resources */,
 				9C3A855A25A14ECF00D7950D /* Map.storyboard in Resources */,
-				5BA4CE3A25ADAA05006779F5 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +283,6 @@
 				9CC8EB82259D30DB009689E3 /* NewsLocation.swift in Sources */,
 				9CC661D2259930E8006E08FC /* AuthorizationViewController.swift in Sources */,
 				9C3A58562556A8F800DB29E0 /* AppDelegate.swift in Sources */,
-				5BA4CE4125ADADCE006779F5 /* SettingsViewController.swift in Sources */,
 				9CC661D5259930E8006E08FC /* WelcomePageViewController.swift in Sources */,
 				9CC8EB4C259CE8C8009689E3 /* PartsOfNews.swift in Sources */,
 				9CC661DE25993101006E08FC /* MapViewController.swift in Sources */,
